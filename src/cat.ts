@@ -15,6 +15,6 @@ export class Cats extends Animal
    // Information about 'DisplayInfo' method of cat
     public displayInfo(): void {
         super.displayInfo();
-        this.color = this.color;
+        console.log(`${this.color}`);
     }
 }
