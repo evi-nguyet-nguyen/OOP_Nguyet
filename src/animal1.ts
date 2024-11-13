@@ -1,4 +1,4 @@
-// 1. Lớp Trừu Tượng Animal (Động vật chung)
+// 1. Abstract Animal 
 export abstract class Animal {
   // 4. Private properties of Animal class (Encapsulation)
   private name: string;
