@@ -1,22 +1,21 @@
-// kế thừa
+
 import { Animal } from "./animal1";
 export class Chicken extends Animal {
-  private color: string; // Màu sắc của con gà
-  protected weight: number; // Can nang, kg
+  private color: string; // color of chicken
+  protected weight: number; // weigh of chicken
 
   constructor(name: string, age: number, color: string, weight: number) {
-    super(name, age); // Gọi constructor của lớp cha (Animal)
+    super(name, age); //  call constructor from class (animal)
     this.color = color;
     this.weight = weight;
   }
 
-  // 3. **Polymorphism (Đa hình)**: Phương thức makeSound được ghi đè trong lớp con Chicken
+  //3. Polymorphism  Makesound method overrding in the class chicken
   makeSound(): void {
     console.log(`${this.getName()} says: Cluck Cluck!`);
   }
- 
 
-  // Phương thức để hiển thị thông tin về con gà
+  // Information about 'DisplayInfo' method of chicken
   displayInfo(): void {
     super.displayInfo();
     console.log(`Color: ${this.color}`);
